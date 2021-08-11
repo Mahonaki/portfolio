@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-zara-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node node_modules/sass/sass.js --watch src/sass/index.scss public/style.min.css & live-server ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
+}

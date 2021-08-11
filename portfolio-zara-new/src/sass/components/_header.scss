@@ -1,0 +1,41 @@
+.header {
+  padding: 40px 0 25px 0;
+
+  &__title {
+    font-size: 53px;
+    letter-spacing: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    @media screen and (max-width: $tablet-start) {
+      font-size: 37px;
+      letter-spacing: 13px;
+      padding-left: 13px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 75px 0 auto;
+    width: 250px;
+    @media screen and (max-width: $desktop-start) {
+      margin: 40px auto 0 auto;
+    }
+    @media screen and (max-width: $tablet-start) {
+      width: 200px;
+    }
+
+    &__anchor {
+      font-size: 15px;
+      font-weight: 600;
+      @media screen and (max-width: $tablet-start) {
+        font-size: 13px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}

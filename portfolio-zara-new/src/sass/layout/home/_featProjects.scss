@@ -1,0 +1,63 @@
+.feat-projects {
+  padding: 50px 0;
+  @media screen and (max-width: $tablet-start) {
+    padding: 30px 0 0 0;
+  }
+
+  &__header {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__divider {
+    background-color: #333;
+    border: none;
+    height: 1px;
+    margin-bottom: 50px;
+    width: 50px;
+  }
+
+  &__list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 1200px;
+
+    &__project {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 100%;
+        transition-duration: 0.3s;
+        width: 500px;
+        z-index: 2;
+        @media screen and (max-width: $desktop-start) {
+          margin-bottom: 20px;
+        }
+        @media screen and (max-width: $tablet-start) {
+          width: 100%;
+        }
+
+        &:hover {
+          filter: blur(5px) grayscale(1);
+          z-index: 1;
+        }
+      }
+
+      h1 {
+        background-color: #79533EB2;
+        color: $color-white;
+        font-weight: 500;
+        padding: 10px;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+  }
+}

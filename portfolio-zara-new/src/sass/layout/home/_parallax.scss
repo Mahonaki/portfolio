@@ -1,0 +1,26 @@
+.parallax {
+  align-items: center;
+  background-attachment: fixed;
+  background-image: url("images/book.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 850px;
+  justify-content: center;
+  margin: 0 50px;
+  padding: 0 25px;
+  @media screen and (max-width: $tablet-start) {
+    height: 500px;
+    margin: 0;
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 60px;
+    font-weight: 500;
+    @media screen and (max-width: $tablet-start) {
+      font-size: 50px;
+    }
+  }
+}
